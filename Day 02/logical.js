@@ -31,13 +31,7 @@ False ==> False
 
 !True ==> False
 !False ==> True
-
-
-
-
 */
-// let zaid;
-// console.log('Zaid ku samaj me aya');
 
 let a = 10;
 let b = 5;
