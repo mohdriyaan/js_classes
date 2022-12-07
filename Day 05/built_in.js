@@ -1,0 +1,5 @@
+console.log(new Date())
+console.log(Math.random())
+console.log(Math.floor())
+console.log(Math.sqrt())
+console.log(Math.pow())
