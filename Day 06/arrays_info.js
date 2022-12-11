@@ -2,7 +2,7 @@
 /*
 
 Array : Array is collection of data,elements and items stored in contagious
-memory location or i ordered collection
+memory location or in ordered collection
 
 // Array is collection of data types
 
