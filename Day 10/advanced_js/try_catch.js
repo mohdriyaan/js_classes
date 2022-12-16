@@ -1,29 +1,16 @@
-// https://api.chucknorris.io/
-// try,catch,finally,throw,throws
-// fetch() brings data to the client from the server
-
-// fetch('https://api.chucknorris.io/jokes/random')
-//     .then( (response) => {
-//         // console.log("API: " , response.json());
-//         return response.json();
-//     })
-//     .then((data) => {
-//         // console.log("Data is :", data);
-//         var joke = data.value;
-//         console.log("JOKE :",joke);
-//     })
-//     .catch();
 /*
-
    Exception handling
 
    Any error is an exception
 
+   Exception handling means Error Handling.
+
    try,catch,finally,throw
 
     Errors can be
-        1)Syntax Errors
-        2)Run time errors
+        1)Syntax Errors:Invalid Syntax
+        2)Run time Errors:At the time of code or in middle of api's or at runtime
+        3)Type Errors
 
 
         try

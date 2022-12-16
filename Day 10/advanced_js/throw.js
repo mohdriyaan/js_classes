@@ -1,4 +1,6 @@
 // Throw Exception
+// throw
+// console.log+return
 let num=10
 try{
     // if(num=num) throw "same"
