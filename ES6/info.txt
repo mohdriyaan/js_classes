@@ -1,0 +1,30 @@
+1995 ==> Java Popular ==> Backend For Websites 
+
+JavaScript ==> Brendan Eich 1995 ==> 10 Day
+// 1st Mocha
+// 2nd Live Script
+// 3rd JavaScript
+
+
+// 1st Browser was NetScape Navigator ==>JS
+Brendan Eich 
+
+// 1996 Internet Explorer ==> Microsoft
+// JScript 
+
+
+1999 -2000
+
+// JavaScript Vs JScript  ==> 
+
+
+
+// ECMA  2015 
+// European Computer Manufactors Asssociation
+
+// ECMA Script 2015> ECMA or ECMA Scrpit or ES6
+
+
+// ES1:1997
+// ES5:2009
+// ES6:2015  // ES6 Has More Updates Than Other Versions

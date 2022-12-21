@@ -1,0 +1,11 @@
+ES6 Features:
+1.let and const
+2.Arrow functions
+3.Template Literals
+4.Destructuring
+5.Import And export
+6.Rest operator
+7.Map
+8.Set
+9.Classes
+10.for of
