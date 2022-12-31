@@ -1,0 +1,17 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "Base 64 Encoding Project",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Mohammed Riyaan",
+  "license": "ISC",
+  "dependencies": {
+    "cli-color": "^2.0.3",
+    "readline-sync": "^1.4.10"
+  }
+}
