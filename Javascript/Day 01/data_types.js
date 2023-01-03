@@ -13,8 +13,10 @@
 7.null
 */
 //Primitive data types are immutable.Immutable means it cannot be changed.
+// Primitive data is stored in stack. 
 
 /*Non Primitive Data Types
 1.Object
 2.Array
 */
+// Non Primitive data is stored in heap. But its pointers is stored in stack.[addresses of array elements]

@@ -28,3 +28,12 @@ Brendan Eich
 // ES1:1997
 // ES5:2009
 // ES6:2015  // ES6 Has More Updates Than Other Versions
+
+// ES6 Version Of JS Is called Modern JavaScript.
+
+// JavaScript or ECMA Script is managed by TC39[Technical Community].In this community it has 39 members who manage and undertake the Updates
+// in the language.
+
+// JavaScript is backward compatibality. Which means even the older syntax or legacy code can be implemented as well.
+// JavaScript is not forward compatibality. Which means you cannot use new features to old versions of browsers.
+
