@@ -21,7 +21,11 @@ data
         let final=response.data
         console.log(orange("\n*************************************************"))
         console.log(pink(`\n1. Name : ${final.name}`))
-        console.log(pink(`\n2. Twitter name : ${final.twitter_username}`))
+        if(final.twitter_username==null){
+            console.log(pink(`\n2. Hello ${final.name} your twitter account is uncreated or you have no account!!`))
+        }else{
+            console.log(pink(`\n2. Twitter name : ${final.twitter_username}`))
+        }
         console.log(pink(`\n3. Public Repos : ${final.public_repos}`))
         console.log(pink(`\n4. Public Gists : ${final.public_gists}`))
         console.log(pink(`\n5. Followers Are : ${final.followers} and Following Are : ${final.following}`))
