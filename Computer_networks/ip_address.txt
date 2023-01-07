@@ -1,0 +1,59 @@
+What Is IP Address ??
+
+IP Address stands for Internet Protocol Address . IP Address is assigned to every hardware device when it is connect to Internet
+Ex: 192.132.6.8
+
+There are two types of Addressing : 
+1. IP Address 
+2. MAC Address
+
+1. IP Address [Internet Protocol Address] is a logical addressing used by the Internet. It is online network address for your device
+* A IP Address is used for global identifcation.
+* Assigned to device through software congigurations.
+* It is easy to access.
+* Can be changed.
+
+2. MAC Address [Media Access Control Address] is a physical addresssing used by the Internet. It is a unique identification number of
+physical device that is used by the network to identify your device . 
+* A MAC Address is used for local identification
+* Hardcoded into the device at the time of manufacturing.
+* It is hard to access
+* Can't be changed.
+
+There are twp versions Of Ip:
+1) IPV4
+2) IPV6
+
+1. IPV4 :- * 32 bits length
+           * Octet 4
+           * 0 to 255(maximum)
+           * Only 4 billion 2^32 are to be used.
+           * It is seperated by dot (.)
+
+2. IPV6 :- * 128 bits length
+           * Octet 8
+           * 0 to FFFF (65535)
+           * 340 trillion 2^128
+           * It is seperated by colon (:)
+
+So why are there 2 versions of IP Address??
+This is because as the population of the world increaes so will the no of devices will also increase . This will exceed the limit Of 
+IPV4 , this is why IPV6 was created so that there will be no shortage of it . 
+
+Uses Of Ip :- 1) Private IP , It is used for domestic purposes , personal purposes.
+              2) Public IP , It is used by companies and organizations or to have your own website.
+
+There are 5 classes of IP :-
+1) Class A :- [0.0.0.0 [10.0.0.0 to 10.255.255.255 - Private IP] to 127.255.255.255 - Public IP]
+    Class A is used by Internet Service Providers (ISPs)
+2) Class B :- [128.0.0.0 [172.16.0.0 to 172.31.255.255 - Private IP] to 191.255.255.255 - Public IP]
+    Class B is used by large and enterprise companies or organizations
+3) Class C :- [192.0.0.0 [192.168.0.0 to 192.168.255.255 - Private IP] to 223.255.255.255 - Public IP]
+    Class C is used for home networks , small business and domestic purposes 
+    All of the devices connected to router comes under Class C which will be Private.
+4) Class D :- [224.0.0.0 to 239.255.255.255 ]
+    There are no private IP Addresses in this.
+    It is used for Multicasting such as satellite communication , TV Broadcasting etc .. 
+5) Class E :- [240.0.0.0 to 255.255.255.255 ]
+    There are no private IP Addresses in this . 
+    It is used for Experimental And Research Purposes . 
