@@ -1,0 +1,37 @@
+NodeJS is a cross platform run time enviroment which allows us the run the Javascript code outside the browsers.
+
+NodeJS is often used to build back end services such as API [Application Programming Interfaces] that powers our client
+applications such as web applications and mobile applications. These applications needs to communicate with back end services 
+to store data , send emails , push notifications and kicking off workflows.
+
+NodeJS Features :-
+* Great For Prototyping and Agile development 
+* Faster
+* Highly scalable 
+* Based On Javascript
+* Cleaner and more consistent codebase or source code
+* Large ecosystem of open souce libraries
+
+Before NodeJS , Javascript code was executed on browsers .
+Each browser has its own Javascript Engine to execute the code .
+For Ex:- Google Chrome has V8 Engine , Microsoft uses Chakra.
+Due to this Javascript could behave diferently due to different JS Engines.
+This process was done until 2009 when Rayn Dahl created NodeJS out of Chrome's V8 Engine.He created it by taking the V8 Js Engine 
+which was open source and embeddded into C++ code.
+
+How NodeJS works ??
+NodeJS IS used to build highly scalable applications because of it's asynchronous nature(or non blocking nature)
+
+The node will be single allocated thread which will manage multiple requests and responses.
+
+The problem with synchronous architectures is that when we recieve a request on the server it is allocated a thread so it has to wait
+until the request is completed and then compltete another request . If there are multiple requests to be made then multiple servers are
+needed which will be inefficient.
+
+So the node can manage multiple clients where it can serve 1st request and 2nd request where it does not need to wait for the 1st request 
+to be completed to go to 2nd request and if the result of the 1st request is generarted , it is stored in Event queue which is 
+constantly monitored by the node.
+
+That is why it is ideal to use node for i/o data intensive applications howewer it should not be used for CPU Intensive applocations 
+because it requires lot of calculations.
+ 
