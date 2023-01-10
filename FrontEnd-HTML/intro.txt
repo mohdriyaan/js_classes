@@ -1,11 +1,26 @@
 Tim Berners Lee - While working at CERN invented www in 1989.
 
 First Webpage : 1991
-http://info.cern.catch
+http://info.cern.ch
 
 First Website
 By default , links will appear as blue in all browsers.
 A visited link is underlined and purple.
+
+The first website at CERN – and in the world – was dedicated to the World Wide Web project itself and was hosted on 
+Berners-Lee's NeXT computer. In 2013, CERN launched a project to restore this first ever website: info.cern.ch.
+
+Web Browsers are used for accessing web pages by writing the web address [IP Address or the Domain Name] . The popular Web Browsers are
+Google , Mozilla Firefox , Microsoft Edge..
+When you ask the browser for the web page the request is sent across the Internet to a special computer known as web servers.
+Web Servers are constantly connected to Internet and are optimised to send Web pages to the users who requests them.
+Some Big Companies have their own web servers while some host the website using web hosting companies that charges a fee
+for it .
+
+When you visit the website , the web server hosting the website could be anywhere in the world. In order to
+find the location, the browser connects to the Domain Name System (DNS) Server. These DNS acts as a phonebook which has the IP
+Address associated with the Domain Name. Then this IP Address is sent back to the computer for the browser to connect to the web
+server using the address . After connecting to the web server , the web server sends the requested web page back to the computer.   
 
 HTML (HyperText Markup is the code that is used to structure a webpage and its content.
 
@@ -13,3 +28,4 @@ The standard markup language for creating web pages.
 HTML elements tell the browser how to display the content.
 HyperText means that the document contains links that allows the reader to jump
 to other places in the document or another alltogether.
+
