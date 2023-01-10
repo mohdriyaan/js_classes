@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5</title>
+</head>
+<body>
+    <!-- A picture can say a thousand words, and great images help make the difference between an  
+    average-looking site and a really engaging one.-->
+    <h1>Images in HTML</h1>
+    <img src="download.jpeg" alt="image"> <br>
+    <!-- To add an image into the page you need to use an <img> element. This is an empty 
+    element (which means there is no closing tag). -->
+    <!-- src This tells the browser where it can find the image file. This will usually be a relative URL 
+    pointing to an image on your own site.  -->
+    <!-- alt provides a text description of the image which describes the image if you cannot see it -->
+    <img src="download.jpeg" width="600" height="300" alt="image">
+    <!-- height specifies the height of the image in pixels -->
+    <!-- This specifies the width of the image in pixels. -->
+    <!-- The size of images is increasingly being specified using CSS rather than HTML -->
+    <h2>Placing the image before a paragraph</h2>
+    <img src="download.jpeg"  alt="image"><p>The image is before the paragraph.</p>
+    <hr>
+    <h2>Placing the image at the start of the paragraph</h2>
+    <p><img src="download.jpeg" alt="image">The image at the start of the paragraph</p>
+    <hr>
+    <h2>Placing the image in the middle of the paragraph</h2>
+    <p>The image is in the middle <img src="download.jpeg" alt="image"> of the paragraph. </p>
+    <hr>
+    <h2>Aligning The Images</h2>
+    <!-- Align attribute is used to align the text or images -->
+    <p><img src="download.jpeg" alt="image" height="150" align="right">The paragraph after alignment</p><br>
+    <p><img src="download.jpeg" alt="image" height="150" align="left" >The paragraph after alignment</p><br>
+    <br><br><br><br><br>
+    <h2>Figure And Figcaption Tags</h2>
+    <!-- HTML5 has introduced a new <figure> element to contain images and their caption so that the two are associated.  -->
+    <hr>
+    <figure align="center">
+        <img src="download.jpeg" alt="image">
+        <br>
+        <figcaption>Nature Of Autumn Season</figcaption>
+    </figure>
+</body>
+</html>
