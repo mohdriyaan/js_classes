@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7</title>
+</head>
+<body>
+    <!-- HTML forms give you a set of elements to collect data from your users.  -->
+    <h1>Forms In HTML</h1>
+    <form action="http://www.example.com/subscribe.php" method="get">
+    <p>This is where the form controls will appear.
+    </p>
+    </form>
+    <!-- Action attribute is value of the URL for the page on the server that will receive the information in the form when it 
+    is submitted -->
+    <!-- get method is generally used for short forms or retrieving information from the web server. And not adding the information
+    to the database  -->
+    <!-- post method is used to send the data to the database -->
+    <form>
+        <h2>Text Input Fields</h2>
+        <label for="fname">Enter your name : </label>
+        <input type="text" id="name" name="name"><br>
+        <!--  the id attribute is used to identify the form distinctly from other elements on the page -->
+        <!-- The name attribute is used When users enter information into a form, the server needs to know which form control each 
+        piece of data was entered into.  -->
+        <label for="birtday">Enter your date of birthday : </label>
+        <input type="date" id="birthday" name="birthday"><br>
+        <label for="email">Enter your email : </label>
+        <input type="email" id="email" name="email"><br>
+        <label for="quantity">Enter your phone number : </label>
+        <input type="number" id="quantity" name="quantity">
+        <br>
+        <h2>Radio Buttons</h2>
+        <p>Choose Your Favourite Web Language</p>
+        <input type="radio" id="html" name="Fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="css" value="css">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="javascript" value="javascript">
+        <label for="javascript">JS</label>
+
+        <h2>Checkboxes</h2>
+        <p>What is your age ??</p>
+        <input type="checkbox" name="age" value="age" unchecked="checked"> 18-25
+        <input type="checkbox" name="age" value="age" unchecked="checked"> 25-35
+
+        <h2>The Button Elements</h2>
+        <button type="button" onclick="alert(`Hey click`)">Click Me</button><br>
+
+        <h2>Options Tag</h2>
+        <label for="cars">Choose A Car : </label>
+        <select name="cars" id="cars">
+         <option value="Volvo">Volvo</option>
+         <option value="Hyundai">Hyundai</option> 
+         <option value="Audi">Audi</option>
+           
+        </select>
+
+    </form>
+
+    
+</body>
+</html>
