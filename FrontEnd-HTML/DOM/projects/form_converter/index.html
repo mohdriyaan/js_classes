@@ -31,8 +31,37 @@
     <footer>
         <a href="https://www.linkedin.com/in/mohammed-riyaan-459235180/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <br><br>
-        <p>CopyRights &copy; 2023. All Rights Reserved.</p>
-        <span id="date"></span>
+        <p>CopyRights. &copy; All Rights Reserved.</p>
+        <span id="date"></span> <!--span is uded the divide one single line of code.-->
     </footer>
 </body>
+<script>
+    // update the date in the footer
+    document.getElementById("date").innerText=new Date().getFullYear();
+    function changeFont(event){
+        // prevent the page from reloading
+        event.preventDefault();
+        
+        // Getting input from user text area
+        let text=document.getElementById("textinput").value;
+        // We are using .value to get the content inside the textarea.
+        console.log(text);
+        
+        // Getting Font Name from select Drop down menu.
+        let fontName=document.getElementById("font_styles").value;
+        console.log(fontName);
+
+        // this is the element that has the ooutput text area
+        let formatText=document.getElementById("newText");
+        // We are not using the value because we have to give the input above and it should just display.
+        console.log(formatText);
+        
+        // changing text of the output text area.
+        formatText.innerText=text;
+
+        // adding a font style for output text area.
+        formatText.style.fontFamily=fontName;
+    }
+</script>
+
 </html>
