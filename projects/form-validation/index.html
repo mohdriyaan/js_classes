@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Details</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Registration Page</h1>
+        </div>
+        <div class="form">
+            <form class="Register_details" action="login.html" method="get"  onsubmit="return validate()">
+                <h2>Register Details</h2>
+                <label for="name" id="text">Enter Your name : </label> <br>
+                <input type="text" id="text-name" placeholder="Enter your name"> <br>
+                <label for="username" id="text">Enter your username : </label> <br>
+                <input type="text" id="text-username" placeholder="Enter your username"> <br>
+                <label for="email" id="text">Enter your email : </label> <br>
+                <input type="text" id="text-email" placeholder="Enter your email"> <br>
+                <label for="number" id="text">Enter your Mobile Number : </label> <br>
+                <input type="number" id="text-number" placeholder="Enter your Mobile Number"> <br>
+                <label for="address" id="text">Enter your address : </label> <br>
+                <input type="text" id="text-address" placeholder="Enter your address"> <br>
+                <!-- <button type="submit" id="button" onclick="validateEmail()">Register</button> <br> <br> <br> -->
+                <input type="submit" id="btn">
+            </form>
+        </div>
+       <div class="footer">
+        <a href="https://www.linkedin.com/in/mohammed-riyaan-459235180/" target="_blank"> <h3 id="linkedin">LinkedIn</h3></a> <br> 
+        <p>CopyRights 2023.&copy;All Rights Reserved.</p>
+       </div>
+    </div>
+</body>
+<script>
+    function validate(){
+        let email=document.getElementById("text-email").value;
+        let number=document.getElementById("text-number").value
+        let symbol=email.indexOf("@")
+        let dot=email.indexOf(".")
+        // let btn=document.getElementById("button")
+        if(email==""||email==null){
+            alert("Invalid Email Address. Email Address should not be empty.")
+            return false
+        }
+        if(email.length<2){
+            alert("Invalid Email Address.Email Address should not be less then 2");
+            return false;
+            // check for @ sign
+        }else if(symbol<=1){
+            alert("Invalid Email Address.Special Character @ should not be in the beginning.")
+            return false;
+        }else if(symbol==(-1)){
+            alert("Invalid Email Address.Special Character @ should not be in the end.")
+            return false;
+            //check for . sign
+        }else if(dot<=1){
+            alert("Invalid Email Address.Special Character . should not be in the beginning.")
+            return false;
+        }else if(dot==(-1)){
+            alert("Invalid Email Address.Special Character . should not be in the end.")
+            return false;
+        }else if(number.length<10){
+            alert("Invalid Mobile Number. Digits are less then 10")
+            return false
+        }else{
+            return true;
+        }
+
+
+    }
+</script>
+</html>
