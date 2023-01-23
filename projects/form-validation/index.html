@@ -37,16 +37,27 @@
 </body>
 <script>
     function validate(){
+        let name=document.getElementById("text-name").value
+        let username=document.getElementById("text-username").value
+        let address=document.getElementById("text-address").value
         let email=document.getElementById("text-email").value;
         let number=document.getElementById("text-number").value
         let symbol=email.indexOf("@")
         let dot=email.indexOf(".")
         // let btn=document.getElementById("button")
-        if(email==""||email==null){
+        if(name==""||name==null){
+            alert("Name should not be empty.")
+            return false;
+        }else if(username==""||username==null){
+            alert("Username should not be empty")
+            return false;
+        }else if(email==""||email==null){
             alert("Invalid Email Address. Email Address should not be empty.")
             return false
-        }
-        if(email.length<2){
+        }else if(address==""||address==null){
+            alert("Address should not be empty")
+            return false;
+        }else if(email.length<2){
             alert("Invalid Email Address.Email Address should not be less then 2");
             return false;
             // check for @ sign
