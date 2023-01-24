@@ -25,7 +25,6 @@
                 <input type="text" id="text-number" placeholder="Enter your Mobile Number"> <br>
                 <label for="address" id="text">Enter your address : </label> <br>
                 <input type="text" id="text-address" placeholder="Enter your address"> <br>
-                <!-- <button type="submit" id="button" onclick="validateEmail()">Register</button> <br> <br> <br> -->
                 <input type="submit" id="btn">
             </form>
         </div>
@@ -84,23 +83,6 @@
         }else if(address==""||address==null){
             alert("Address should not be empty")
             return false;
-        // }else if(email.length<2){
-            // alert("Invalid Email Address.Email Address should not be less then 2");
-            // return false;
-            // check for @ sign
-        // }else if(symbol<=1){
-        //     alert("Invalid Email Address.Special Character @ should not be in the beginning.")
-        //     return false;
-        // }else if(symbol==(-1)){
-        //     alert("Invalid Email Address.Special Character @ should not be in the end.")
-        //     return false;
-        //     //check for . sign
-        // }else if(dot<=1){
-        //     alert("Invalid Email Address.Special Character . should not be in the beginning.")
-        //     return false;
-        // }else if(dot==(-1)){
-        //     alert("Invalid Email Address.Special Character . should not be in the end.")
-        //     return false;
         }else{
             return true;
         }
