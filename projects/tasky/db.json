@@ -3,24 +3,8 @@
     "firstName": "Mohammed",
     "lastName": "Riyaan",
     "email": "mohammedrayaan1@gmail.com",
-    "phone": "9704271725",
-    "password": "helloboi123",
-    "password1": "helloboi123"
-  },
-  {
-    "firstName": "alex",
-    "lastName": "mercer",
-    "email": "alex123@gmail.com",
-    "phone": "9899787890",
-    "password": "alex123",
-    "password1": "alex123"
-  },
-  {
-    "firstName": "jack",
-    "lastName": "daniels",
-    "email": "jack123@gmail.com",
-    "phone": "9701518984",
-    "password": "jack123",
-    "password1": "jack123"
+    "phone": "+919704271725",
+    "password": "#Coolrayaan123",
+    "password1": "#Coolrayaan123"
   }
 ]
