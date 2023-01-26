@@ -29,7 +29,8 @@ async function login(){
     // console.log(password_data)
     let otp=generaterandom(4)
     let phone_data=data1.map((data1)=>((data1).phone))
-    let userData=phone_data.toString()
+    let userData=phone_data.pop()
+    // console.log(userData)
     
     let email=readline.question(pink("Enter Your Email : "))
     let password=readline.question("Enter your Password : ",{
@@ -38,7 +39,7 @@ async function login(){
     if(email==""||email==null||password==""||password==null){
         console.log("You have not entered the email and password.")
         setTimeout(login,3000)
-    }else if(!email.match(email_data)||!password.match(password_data)){
+    }else if(!email.matchAll(email_data)||!password.matchAll(password_data)){
         console.log("Your email and password are not found . Please Verify it And Re-enter it.")
         setTimeout(login,3000)
     }else{

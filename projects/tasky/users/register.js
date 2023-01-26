@@ -48,9 +48,7 @@ async function register(){
     let email_data=JSON.parse(data)
     let userData=email_data.map((email_data)=>((email_data).email))
     let data_user=userData.toString()
-    console.log(data_user)
-
-    if(email.match(data_user)){
+    if(email.matchAll(email_data)){
         sendMail({
             subject:"Testing",
             to:`${email}`,
@@ -58,11 +56,10 @@ async function register(){
         })
         console.log("\n Registration is Successfull")
         setTimeout(login,5000)
-        
     }else{
-        console.log("Email is entered wrong.")
+        console.log("Email Is Not Found . Please Verify It.")
         await register()
-    }   
+    }
 
     // console.log("\n Registration is Successfull")
 
