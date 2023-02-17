@@ -35,20 +35,26 @@ export default async function insert() {
       login();
     }, 4000);
   } else {
+    let encrypt=readline.question("\nEnter the token : ")
+    let key = "riyaan" 
+    let decrypt=CryptoJS.AES.decrypt(encrypt,key);
+    let originalToken=decrypt.toString(CryptoJS.enc.Utf8)
+    try {
+      let decode=jwt.verify(originalToken,key)
+      console.log("Your Token Is Valid . Please Continue.")
+    } catch (error) {
+      console.log("The token has expired . Please Login Again.")
+      return setTimeout(() => {
+        login();
+      }, 4000);
+    }    
+
     let addTodo = readline.question("\nEnter Your Todo : ");
     let _id = Math.random().toString(36).substr(2, 10);
     let todo = addTodo;
     let isCompleted=false;
     await scheduledeadline()
-    await email()
     
-    scheduleJob(remainder1,function(){
-      sendEmail({
-          to: email,
-          subject: "Task Reminder 1",
-          text: `Your deadline is ${deadline}`
-      })
-    })
     emailFound.todos.push({ _id, todo ,isCompleted, deadline ,remainders });
     let writeData = JSON.stringify(stringToObject);
     await fs.writeFile("db.json", writeData);
@@ -77,6 +83,21 @@ export default async function insert() {
       await scheduledeadline()
     }else{
       remainders.push(remainder1,remainder2) 
+      scheduleJob(remainder1,function(){
+        sendEmail({
+            to: email,
+            subject: "Task Reminder 1",
+            text: `Your deadline is ${deadline}`
+        })
+      })
+      
+      scheduleJob(remainder2,function(){
+        sendEmail({
+          to: email,
+          subject: "Task Reminder 2",
+          text: `Your deadline is ${deadline}`
+        })
+      })
       return deadline,remainder1,remainder2,remainders;
     }
   }

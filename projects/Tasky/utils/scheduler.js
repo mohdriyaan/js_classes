@@ -1,11 +1,9 @@
 import { scheduleJob } from "node-schedule";
 import readline from "readline-sync"
 import sendEmail from "../utils/sendEmail.js"
+async function cool(){
 let deadline=readline.question("Enter the deadline : ")
 const date = new Date(deadline);
-console.log(date)
-// console.log(typeof date)
-// console.log(date)
 scheduleJob(date, function(){
     sendEmail({
         to: "mohammedrayaan1@gmail.com",
@@ -13,3 +11,5 @@ scheduleJob(date, function(){
         text: `Your deadline is ${date}`
     })
 });
+}
+await cool()

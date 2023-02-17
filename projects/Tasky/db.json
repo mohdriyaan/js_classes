@@ -8,11 +8,11 @@
     "password": "$2b$10$RzcPe1vuGRslEyzMjwQra.brzukfm/ETyHEHPGjnc.mcu/XfCDRVS",
     "todos": [
       {
-        "_id": "hh3yrap9b3",
-        "todo": "Run",
+        "_id": "2t1iwu9ocy",
+        "todo": "Running",
         "isCompleted": false,
-        "deadline": "2023-02-17T15:40:00.000Z",
-        "remainders": ["2023-02-17T15:24:13.996Z", "2023-02-17T15:32:06.998Z"]
+        "deadline": "2023-02-17T16:55:00.000Z",
+        "remainders": ["2023-02-17T16:39:37.885Z", "2023-02-17T16:47:18.942Z"]
       }
     ]
   }
