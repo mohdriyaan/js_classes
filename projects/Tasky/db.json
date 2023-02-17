@@ -1,0 +1,19 @@
+[
+  {
+    "firstname": "Mohammed",
+    "lastname": "Riyaan",
+    "email": "mohammedrayaan1@gmail.com",
+    "phone": 9704271725,
+    "address": "Tolichowki",
+    "password": "$2b$10$RzcPe1vuGRslEyzMjwQra.brzukfm/ETyHEHPGjnc.mcu/XfCDRVS",
+    "todos": [
+      {
+        "_id": "hh3yrap9b3",
+        "todo": "Run",
+        "isCompleted": false,
+        "deadline": "2023-02-17T15:40:00.000Z",
+        "remainders": ["2023-02-17T15:24:13.996Z", "2023-02-17T15:32:06.998Z"]
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+Create a file script.sh
+Add date >> output.txt in script.sh
+sudo chmod 777 script.sh
+crontab -e
+Syntax * * * * * /fullpath-of-script
+sudo service cron start
+crontab -l ==> To check the Crontab file
+crontab -r ==> To Stop All CronTabs
+Or For Comment the Specific Syntax
+
