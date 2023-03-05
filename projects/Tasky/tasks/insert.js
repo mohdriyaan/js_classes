@@ -8,8 +8,8 @@ import { scheduleJob } from "node-schedule";
 import sendEmail from "../utils/sendEmail.js";
 import sendSMS from "../utils/sendSMS.js";
 
-let deadline,email,remainder1,remainder2;
-let remainders=[]
+let deadline,email,reminder1,reminder2;
+let reminders=[]
 
 export default async function insert() {
   console.clear();
@@ -49,56 +49,77 @@ export default async function insert() {
       }, 4000);
     }    
 
-    let addTodo = readline.question("\nEnter Your Todo : ");
+    let addTodo = readline.question("Enter Your Todo : ");
     let _id = Math.random().toString(36).substr(2, 10);
     let todo = addTodo;
     let isCompleted=false;
-    await scheduledeadline()
     
-    emailFound.todos.push({ _id, todo ,isCompleted, deadline ,remainders });
-    let writeData = JSON.stringify(stringToObject);
-    await fs.writeFile("db.json", writeData);
-    console.log("Todo Added Succesfully");
-    console.log("Redirecting You To Login 4 Seconds");
-    setTimeout(() => {
-      main();
-    }, 4000);
-  }
-  async function scheduledeadline(){ 
-    deadline=readline.question("Enter the deadline : ")
+    deadline=readline.question("Enter the deadline (Ex : Sat March 03 2023 22:00:00 GMT+0530 ) : ")
+    
     if(deadline==null||deadline==""){
       console.log("The Deadline should not be Empty")
-      await scheduledeadline()
+      setTimeout(insert,2000)
+      return;
     }
+
     deadline = new Date(deadline);
     let presentTime=new Date()
     let diffrence=deadline-presentTime
-    remainder1=new Date(+deadline-diffrence/2)
-    remainder2=new Date(+deadline-diffrence/4)
+    reminder1=new Date(+deadline-diffrence/2)
+    reminder2=new Date(+deadline-diffrence/4)
     let mins=(deadline-new Date()) / (1000*60)
     let days=(deadline-new Date())/(1000*60*60*24)
     
-    if(mins<30||days>30){
+    if(mins<2||days>30){
       console.log("The Deadline Should Be More than 30 Mins And Less than 30 Days and not be backdated.")
-      await scheduledeadline()
+      setTimeout(insert,2000)
+      return;
     }else{
-      remainders.push(remainder1,remainder2) 
-      scheduleJob(remainder1,function(){
+      reminders.push(reminder1,reminder2)
+      scheduleJob(reminder1,function(){
         sendEmail({
             to: email,
-            subject: "Task Reminder 1",
-            text: `Your deadline is ${deadline}`
+            subject: "Reminder 1",
+            text: `Your Task ${todo} Reminder 1 is ${deadline}`
+        }),
+        sendSMS({
+          body: `Your Task ${todo} Reminder 1 is ${deadline}`,
+          phone: `+91` + `${details.phone}`,
         })
-      })
-      
-      scheduleJob(remainder2,function(){
+      });
+      scheduleJob(reminder2,function(){
         sendEmail({
-          to: email,
-          subject: "Task Reminder 2",
-          text: `Your deadline is ${deadline}`
+            to: email,
+            subject: "Reminder 2",
+            text: `Your Task ${todo} Deadline 2 is ${deadline}`
+        }),
+        sendSMS({
+          body: `Your Task ${todo} Reminder 2 is ${deadline}`,
+          phone: `+91` + `${details.phone}`,
         })
-      })
-      return deadline,remainder1,remainder2,remainders;
+      }); 
+      scheduleJob(deadline,function(){
+        sendEmail({
+            to: email,
+            subject: "Deadline",
+            text: `Your Task ${todo} has reached it's Deadline.`
+        }),
+        sendSMS({
+          body: `Your Task ${todo} has reached it's Deadline.`,
+          phone: `+91` + `${details.phone}`,
+        })
+        console.log("The Task has reached it's deadline.")
+        console.log("Redirecting You To Login 4 Seconds");
+        setTimeout(() => {
+          main();
+        }, 4000);     
+      }); 
     }
-  }
+    emailFound.todos.push({ _id, todo ,isCompleted, deadline ,reminders });
+  
+    let writeData = JSON.stringify(stringToObject);
+    await fs.writeFile("db.json", writeData);
+    console.log("Todo Added Succesfully");
+  }    
 }
+

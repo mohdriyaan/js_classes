@@ -4,15 +4,22 @@
     "lastname": "Riyaan",
     "email": "mohammedrayaan1@gmail.com",
     "phone": 9704271725,
-    "address": "Tolichowki",
-    "password": "$2b$10$RzcPe1vuGRslEyzMjwQra.brzukfm/ETyHEHPGjnc.mcu/XfCDRVS",
+    "address": "Hyderabad",
+    "password": "$2b$10$T5sjakpEDs23OrBqGR1nwuTZwjcnKFm2VF2gwnBrI0xQqPVAuaXbe",
     "todos": [
       {
-        "_id": "2t1iwu9ocy",
+        "_id": "a4s240h23p",
         "todo": "Running",
         "isCompleted": false,
-        "deadline": "2023-02-17T16:55:00.000Z",
-        "remainders": ["2023-02-17T16:39:37.885Z", "2023-02-17T16:47:18.942Z"]
+        "deadline": "2023-03-05T16:45:00.000Z",
+        "reminders": ["2023-03-05T16:22:47.986Z", "2023-03-05T16:33:53.993Z"]
+      },
+      {
+        "_id": "nuaof3b211",
+        "todo": "Code",
+        "isCompleted": false,
+        "deadline": "2023-03-05T16:12:00.000Z",
+        "reminders": ["2023-03-05T16:10:26.202Z", "2023-03-05T16:11:13.101Z"]
       }
     ]
   }

@@ -9,7 +9,7 @@
     },
     "SEND_SMS": {
         "TWILIO_SID": "AC3f70e8a0672eee0bc5b63e7d42b100f4",
-        "TWILIO_TOKEN": "08dea6def42276b2bafc2e082ee86940",
+        "TWILIO_TOKEN": "fc6a96893c87835f80b7b87f5c56645d",
         "TWILIO_NUMBER": "+16067755471"
     }
 }
