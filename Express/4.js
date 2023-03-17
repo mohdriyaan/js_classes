@@ -1,6 +1,6 @@
 import http from "http" //in built module from nodejs
 import url from "url"
-const port=8008 //port number
+const port=8007 //port number
 import fs from "fs/promises"
 async function main(){
     let httpServer=http.createServer(async(req,res)=>{
