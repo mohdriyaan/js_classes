@@ -6,6 +6,7 @@ The topics covered are :-
 <ul>
 <li><a href="https://github.com/mohdriyaan/web_dev/tree/main/FrontEnd-HTML">HTML</a></li>
 <li><a href="https://github.com/mohdriyaan/web_dev/tree/main/FrontEnd-HTML">CSS</a></li>
+<li><a href="https://github.com/mohdriyaan/web_dev/tree/main/FrontEnd-HTML">DOM</a></li>
 <li><a href="https://github.com/mohdriyaan/web_dev/tree/main/Javascript">Javascript</a></li>
 <li><a href="https://github.com/mohdriyaan/web_dev/tree/main/Advanced_JS">Advanced Javascript</a></li>
 <li><a href="https://github.com/mohdriyaan/web_dev/tree/main/fs-file_system">FS-File System</a></li>
