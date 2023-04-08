@@ -1,0 +1,65 @@
+Express is a popular web framework built on top of NodeJS.
+
+Express provides flexibility while creating http servers,routing,middleware and error handling.
+
+Express is widely used in all backend services for Web Apps .
+It can be also used for building complex web application .
+
+NodeJS :- Version 1
+Express :- Version 2
+
+Features Of Express :-
+1. Faster than NodeJS
+2. Middlewares
+3. Routing
+4. Template Engine
+5. Debugging
+6. Isomnia
+
+Installation Of Express :-
+1. npm init -y
+2. npm i Express
+3. touch app.js
+4. type:module in package.json
+5. Add .gitignore
+
+Client can be 
+
+1. Browser
+2. Postman
+3. Axios
+4. Curl
+5. Wget
+
+Server (Ubuntu Machine) / GCP
+1. ExpressJS
+// Database :- MongoDB
+
+GET => Data Fetch // all Browsers use this
+POST => Date Write Add
+PUT => Data Update
+DELETE => Data DELETE
+
+
+Express CheatSheet
+
+1. Express Callbacks always accept req,res which are default parameters.
+
+2. Always send a response or it will keep the client in hanging in loop
+
+3. Do not send multiple responses
+
+Express Middleware :-
+
+1. Application - Level ==> app.use(express.json()) , app.use("/admin",adminAPI)
+2. Router Level ==> router.get("")
+3. Built-in Level ==> express.json() , express.static()
+4. 3rd Party Middleware ==> body-parser , multer:- used for file uploading .
+5. Error Handling ==> Express always follows top to bottom .
+    
+    app.use((req,res)=>{
+    res.status(404).json({msg : "Invalid Route"})
+})
+
+
+

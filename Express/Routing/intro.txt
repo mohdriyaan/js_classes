@@ -1,0 +1,7 @@
+Express consists of MVC Architecture
+
+MVC Architecture
+
+Model => Database Modeling
+View => HTML UI Part View FrontEnd
+Controllers => BackEnd API Part.

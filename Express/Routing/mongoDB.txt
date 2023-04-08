@@ -1,0 +1,21 @@
+MongoDB:- MongoDB is a popular document oriented NoSQL Database that is designed to provide :-
+
+1. High Performance 
+2. Scalability
+3. Availability 
+
+1. SQL stores data in tables i.e., rows and columns
+2. NoSQL stores data in document JSON with dynamic schemas .
+
+1. MongoDB stores the data in flexible JSON , Like documents with dynamic schemas
+2. MongoDB is designed to handle large amount of data to perform query , and it is also good fit for applications like Social media apps , Web apps , e-commerce .
+
+It supports a variety of data types such as numeric , string , and binary data
+
+MongoDB supports a range of advanced features :-
+1. Automatic sharding
+2. Error handling
+3. Easy to scale / maintain .
+
+
+

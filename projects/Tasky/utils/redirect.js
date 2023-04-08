@@ -6,3 +6,4 @@ export default function redirect() {
     main();
   }, 5000);
 }
+
