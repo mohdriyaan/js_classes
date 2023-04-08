@@ -1,0 +1,9 @@
+1. NodeJS is an open source and cross runtime Javascript Runtime Enviroment
+
+2. NodeJS runs on V8 Chromium Engine , the core engine of Google Chrome . This is why we can run Javascript prgrams outside the browser .
+
+3. NodeJS runs on single process , without creating a thread for every single new request such as reading the data or acceesing it 
+from the data base or the network . Instead it uses callback function . 
+
+4. It uses event driven non blocking I/O model to handle concurrent requests by a single thread . 
+

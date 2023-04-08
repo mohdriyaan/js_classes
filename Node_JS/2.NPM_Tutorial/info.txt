@@ -1,0 +1,17 @@
+1. NPM [Node Package Manager] is Standard Package Manager for NodeJS . 
+
+2. As of Sep 2022 it has mearly 2.1 million packages listed .
+
+3. NPM is a way to download and manage dependencies on both front-end and back-end .
+
+4. Yarn and pnpm are alternatives to npm cli
+
+Semantic Versioning 
+express:^4.10.5
+Here the first digit is a major version  
+Here the second digit is a minor version  
+Here the third digit is a patch version  
+
+^4.10.5 means the minor or patch version can change . So you have to npm update
+~4.10.5 means only patch version will change . 
+

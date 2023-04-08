@@ -1,0 +1,12 @@
+Synchronous Programming executes programs in sequential order . 
+
+Sync Programming is also called blocking code because for ex while using apis if the response time from the server gets delayed
+the execution gets blocked and after completing the code will go to the next code . This leads to bad user experience 
+
+Javascript runtime enviroment consists of 2 parts : heap and call stack . All the memory allocations are stored in heap and the call stack
+is a single thread where all the execution happens .
+
+To overcome this we are using Asynchronous Programming.
+
+Javascript is a single threaded synchronous programming language but it can handle async tasks using call back functions .
+

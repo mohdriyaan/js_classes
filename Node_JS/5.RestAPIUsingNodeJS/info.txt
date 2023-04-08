@@ -1,0 +1,2 @@
+REST API Is an application where we can perform CRUD operations such as GET , POST , PUT And DELETE .
+

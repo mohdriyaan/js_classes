@@ -1,0 +1,23 @@
+[
+    {
+        "title":"The Avengers",
+        "year":"2020",
+        "genre":"Action,Adventure",
+        "rating":"7.9"
+    },
+    {
+        "title":"Wolf Of Wall Street ",
+        "year":"2013",
+        "genre":"Biography,Crime",
+        "rating":"8.5"
+    },
+    {
+        "title":"Avatar 2",
+        "year":"2023",
+        "genre":"Action,Adventure",
+        "rating":"7.9"
+    }
+]
+
+
+
