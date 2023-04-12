@@ -1,0 +1,9 @@
+You can access http methods by these tools which are :-
+
+1.Axios
+2.node-fetch
+3.python-request
+4.curl
+5.wget
+6.postman
+7.isomnia
