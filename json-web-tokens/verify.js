@@ -1,7 +1,6 @@
 import readline from "readline-sync"
 import jwt from "jsonwebtoken"
 
-
 function main(){
 
 let token = readline.question("Enter the token : ")

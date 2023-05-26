@@ -1,4 +1,4 @@
-import readline, { questionInt } from "readline-sync"
+import readline from "readline-sync"
 import color from "cli-color"
 const red = color.xterm(1)
 const blue=color.xterm(31)

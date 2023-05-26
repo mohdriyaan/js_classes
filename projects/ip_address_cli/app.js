@@ -14,22 +14,21 @@ function generateIp(){
     console.log(red("***********************************"))
     console.log(green("\n        IP Address Project          "))
     console.log(red("\n***********************************"))
+
     let ip=readline.question(blue("\nEnter your IP Address : "))
     console.log(blue(ip))
+
     let split=ip.split(".")
-    // console.log(split)
-    // console.log(split[3])
     if((split.length==4) && (Number(split[0,1,2,3])>=0)&&(Number(split[0,1,2,3])<=255)){
         range()
     }else{
         console.log(pink("\nInvalid IP Address"))
     }
+    
     function range(){
         console.log(pink("\nValid IP Address"))
         let result=split.join(".")
-        // console.log(result)
         let result1=parseFloat(result)
-        // console.log(result)
         if(result1>=parseFloat("0.0.0.0")&&result1<=parseFloat("127.255.255.255")){
             if(result1>=parseFloat("10.0.0.0")&&result1<=parseFloat("10.255.255.255")){
             console.log(orange("CLASS A and Private IP"))

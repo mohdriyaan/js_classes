@@ -4,15 +4,12 @@ import cryptojs from "crypto-js"
 
 function main(){
 let name=readline.question("Enter your name : ")
-let age = readline.questionInt("Enter your age : ")
-let obj={
-    name,
-    age
-}
+// let age = readline.questionInt("Enter your age : ")
+// let obj=name
 let key="riyaan"
 
 let token = jwt.sign(
-    obj,
+    {name},
     key,
     {expiresIn:60*1}
 )
